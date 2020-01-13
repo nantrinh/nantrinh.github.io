@@ -3,7 +3,7 @@ name: Nancy Trinh
 
 # if it's an external image, update below for true
 # better with square images
-external-image: true 
+external-image: false 
 picture: assets/images/profile.png
 
 # If you want to include your resume, set to true
@@ -12,8 +12,7 @@ resume: false
 resume-external: true
 resume-url: https://google.com/?q=my+resume
 
-url: https://koppl.in/indigo
-# your url: http://USERNAME.github.io
+url: http://nantrinh.github.io
 
 permalink: /:title/
 
