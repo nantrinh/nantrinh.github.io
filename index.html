@@ -36,15 +36,20 @@
       </div>
     </header>
     <main>
-      <section id="intro" class="flexbox horz-center">
-        <img
-          id="avatar"
-          src="public/assets/images/profile.png"
-          alt="photo of Nancy Trinh"
-        />
-        <h3 id="name">Nancy Trinh</h3>
+      <section id="intro" class="padded">
+        <section id="photo">
+          <img
+            id="avatar"
+            src="public/assets/images/profile.png"
+            alt="photo of Nancy Trinh"
+          />
+        </section>
+        <section id="about">
+          <p>Hello! My name is <h3 id="name">Nancy Trinh</h3>.</p>
+          <p></p>
+        </section>
       </section>
-      <section id="projects">
+      <section id="projects" class="padded">
         <h2>Projects</h2>
         <ul>
           <li>
@@ -127,7 +132,7 @@
           </li>
         </ul>
       </section>
-      <section id="contact" class="flexbox horz-center">
+      <footer id="contact" class="flexbox horz-center">
         <ul class="flexbox vert-center">
           <li>
             <a href="public/assets/pdfs/resume.pdf" target="_blank">
@@ -157,7 +162,7 @@
             </a>
           </li>
         </ul>
-      </section>
+      </footer>
     </main>
   </body>
 </html>
