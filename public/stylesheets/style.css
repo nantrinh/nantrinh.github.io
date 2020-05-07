@@ -83,15 +83,6 @@ header {
   position: fixed;
 }
 
-#about-me {
-  display: none;
-}
-
-#about-me-toggle {
-  width: 40px;
-  height: 40px;
-}
-
 #intro > h4 > img {
   display: inline-block;
   padding-right: 5px;
@@ -112,6 +103,9 @@ header {
   width: 100%;
 }
 
+#projects {
+  text-align: center;
+}
 h4 {
   align-items: center;
   color: var(--dark-blue);
@@ -298,6 +292,16 @@ footer {
 #venice-repo-btn {
   margin-top: 25px;
   width: 228px;
+}
+
+/* ---------------------------------
+
+                projects 
+
+------------------------------------ */
+
+#projects > h2 {
+  color: var(--dark-blue);
 }
 
 /* ---------------------------------
