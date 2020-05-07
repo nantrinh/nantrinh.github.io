@@ -65,8 +65,7 @@ h2 {
   text-align: center;
 }
 
-h3,
-#resume-btn {
+h3 {
   color: var(--dark-blue);
   font-family: "Roboto", sans-serif;
   font-size: 1.5rem;
@@ -79,11 +78,39 @@ h3,
 }
 
 header {
-  padding: 15px;
+  display: flex;
+  justify-content: space-between;
   position: fixed;
+  height: 50px;
+  width: 100%;
+  margin: 15px;
 }
 
-#intro > h4 > img {
+#resume-btn {
+  justify-self: start;
+  color: var(--dark-blue);
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+#social {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 15px;
+}
+
+#social a {
+  justify-self: flex-end;
+  width: 50px;
+}
+
+#social .icon {
+  align-self: end;
+  width: 3%;
+}
+
+# #intro > h4 > img {
   display: inline-block;
   padding-right: 5px;
 }
@@ -170,7 +197,7 @@ footer {
   margin: 2%;
   min-width: 34px;
   padding: 3px;
-  width: 100%;
+  width: 20%;
 }
 
 .btn:hover,
@@ -287,6 +314,7 @@ footer {
 
 #projects ul {
   text-align: center;
+  justify-items: center;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   column-gap: 1rem;
@@ -298,14 +326,26 @@ footer {
 }
 
 #projects ul li {
+  justify-items: center;
   display: grid;
-  grid-template-rows: 2fr 1fr 3fr;
+  grid-template-rows: 150px 1fr 3fr;
 }
 
 #projects img {
-  box-shadow: 0 0 25px #d2d7d3;
-  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: cover;
 }
+
+#projects h4 {
+  align-self: center;
+}
+
+/*#projects img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
+}*/
 
 #projects > h2 {
   color: var(--dark-blue);
