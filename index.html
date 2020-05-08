@@ -89,20 +89,25 @@
           </div>
           <div class="flexbox horz-center">
             <p>
-              I recently co-created Venice, an open-source framework for
-              deploying and managing stream processing pipelines.
+              Venice provides a default event stream processing pipeline and a
+              command-utility to automate tedious configuration tasks, freeing
+              developers to focus on building applications.
             </p>
             <p>
-              Venice's default pipeline consists of Apache Kafka brokers,
-              Zookeeper, Zookeeper, Confluent Schema Registry, Kafka Connect,
-              ksqlDB, PostgreSQL server, and Kafdrop.
+              Example workflow: An event producer registers a schema with
+              Confluent Schema Registry and produces data to Apache Kafka
+              brokers, which write the data to topics and replicate across
+              partitions. Kafka Connect workers pull the data from topics and
+              populate a PostgreSQL server. A ksqlDB server and associated CLI
+              can be used to create streams over the data. The Kafdrop UI can be
+              used to view topics, partitions, consumers, and messages.
             </p>
             <a
               id="venice-repo-btn"
               class="btn"
               target="_blank"
               href="https://venice-framework.github.io/case-study.html"
-              >READ THE CASE STUDY</a
+              >READ CASE STUDY</a
             >
           </div>
         </div>
@@ -110,25 +115,6 @@
       <section id="projects" class="padded">
         <h2>Projects</h2>
         <ul>
-          <li>
-            <img
-              src="public/assets/images/venice_architecture.png"
-              alt="Venice architecture"
-            />
-            <h4>
-              <a
-                href="https://venice-framework.github.io/docs.html"
-                target="_blank"
-                >Stream processing pipeline framework</a
-              >
-            </h4>
-            <p>
-              A framework that provides a default event stream processing
-              pipeline and a command-utility to automate tedious configuration
-              tasks. Built in collaboration with a remote team.
-            </p>
-          </li>
-
           <li>
             <img src="public/assets/images/postit.png" alt="Postit" />
             <h4>
