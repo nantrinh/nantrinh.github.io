@@ -11,88 +11,87 @@
   </head>
   <body>
     <header>
-      <a id="resume-btn" href="public/assets/pdfs/resume.pdf" target="_blank"
-        >r&#233;sum&#233;</a
-      >
-      <div id="social">
-        <a id="github" href="https://github.com/nantrinh" target="_blank">
-          <img
-            class="icon"
-            src="public/assets/icons/git_hub.svg"
-            alt="link to Nancy Trinh GitHub"
-          />
-        </a>
-        <a
-          id="linkedin"
-          href="https://www.linkedin.com/in/nancytrinh/"
-          target="_blank"
+      <nav>
+        <a id="resume-btn" href="public/assets/pdfs/resume.pdf" target="_blank"
+          >r&#233;sum&#233;</a
         >
+        <div id="social">
+          <a id="github" href="https://github.com/nantrinh" target="_blank">
+            <img
+              class="icon"
+              src="public/assets/icons/git_hub.svg"
+              alt="link to Nancy Trinh GitHub"
+            />
+          </a>
+          <a
+            id="linkedin"
+            href="https://www.linkedin.com/in/nancytrinh/"
+            target="_blank"
+          >
+            <img
+              class="icon"
+              src="public/assets/icons/linked_in.svg"
+              alt="link to Nancy Trinh LinkedIn"
+            />
+          </a>
+        </div>
+      </nav>
+      <section id="intro" class="padded">
+        <section id="photo">
           <img
-            class="icon"
-            src="public/assets/icons/linked_in.svg"
-            alt="link to Nancy Trinh LinkedIn"
+            id="avatar"
+            src="public/assets/images/profile.png"
+            alt="photo of Nancy Trinh"
           />
-        </a>
-      </div>
+        </section>
+        <section id="about">
+          <p>Hello! My name is <bold id="name">Nancy Trinh</bold>.</p>
+          <p>
+            I have many years of experience in Python, particularly with the
+            data science stack (Numpy, Pandas, Scikit-Learn). I have also built
+            applications using Ruby and JavaScript.
+          </p>
+          <p>
+            My most recent project is
+            <a
+              href="https://venice-framework.github.io/docs.html"
+              target="_blank"
+              >Venice</a
+            >, a stream processing framework built in collaboration with a small
+            remote team.
+          </p>
+        </section>
+      </section>
     </header>
     <main>
-      <section id="intro" class="flexbox horz-center">
-        <img
-          id="avatar"
-          src="public/assets/images/profile.png"
-          alt="photo of Nancy Trinh"
-        />
-        <h3 id="name">Nancy Trinh</h3>
-      </section>
-      <section id="venice" class="flexbox horz-center">
-        <div id="venice-title-container" class="flexbox">
-          <img
-            id="venice-logo"
-            src="public/assets/images/venice_logo.png"
-            alt="Venice logo"
-          />
-          <h2>
-            <a href="https://github.com/venice-framework/venice"
-              >Venice Framework</a
-            >
-          </h2>
-        </div>
-        <div id="venice-info-container" class="flexbox">
-          <div>
-            <img
-              id="deploy-command-gif"
-              src="https://raw.githubusercontent.com/venice-framework/venice-framework.github.io/master/images/diagrams/gifs/workflow.gif"
-              alt="A gif showing sample Venice commands"
-            />
-          </div>
-          <div class="flexbox horz-center">
-            <p>
-              I recently co-created Venice, an open-source framework for
-              deploying and managing stream processing pipelines.
-            </p>
-            <p>
-              Venice's default pipeline consists of Apache Kafka brokers,
-              Zookeeper, Zookeeper, Confluent Schema Registry, Kafka Connect,
-              ksqlDB, PostgreSQL server, and Kafdrop.
-            </p>
-            <a
-              id="venice-repo-btn"
-              class="btn"
-              target="_blank"
-              href="https://venice-framework.github.io/case-study.html"
-              >READ THE CASE STUDY</a
-            >
-          </div>
-        </div>
-      </section>
-      <section id="projects">
-        <h2>Other Projects</h2>
+      <section id="projects" class="padded">
+        <h2>Projects</h2>
         <ul>
+          <li>
+            <img
+              src="public/assets/images/venice_architecture.png"
+              alt="Venice architecture"
+            />
+            <h4>
+              <a
+                href="https://venice-framework.github.io/docs.html"
+                target="_blank"
+                >Stream processing pipeline framework</a
+              >
+            </h4>
+            <p>
+              A framework that provides a default event stream processing
+              pipeline and a command-utility to automate tedious configuration
+              tasks. Built in collaboration with a remote team.
+            </p>
+          </li>
+
           <li>
             <img src="public/assets/images/postit.png" alt="Postit" />
             <h4>
               <a
                 href="https://github.com/nantrinh/postit_app_walkthrough/tree/master/lesson_1"
+                target="_blank"
                 >Postit</a
               >
             </h4>
@@ -105,11 +104,13 @@
           <li>
             <img src="public/assets/images/trello.png" alt="Trello" />
             <h4>
-              <a href="https://github.com/nantrinh/trello">Trello Clone</a>
+              <a href="https://github.com/nantrinh/trello" target="_blank"
+                >Trello Clone</a
+              >
             </h4>
             <p>
               A Trello-like app built with a React and Redux front-end and Ruby
-              on Rails backend.
+              on Rails backend. Built in collaboration with a remote team.
             </p>
           </li>
           <li>
@@ -118,7 +119,9 @@
               alt="Agent learned to land"
             />
             <h4>
-              <a href="public/assets/pdfs/lunarlander_report.pdf"
+              <a
+                href="public/assets/pdfs/lunarlander_report.pdf"
+                target="_blank"
                 >Simulated spaceship landings using reinforcement learning</a
               >
             </h4>
@@ -138,7 +141,7 @@
               alt="Detected signs"
             />
             <h4>
-              <a href="public/assets/pdfs/image_recognition.pdf"
+              <a href="public/assets/pdfs/image_recognition.pdf" target="_blank"
                 >Image recognition of road signs and traffic lights</a
               >
             </h4>
@@ -151,7 +154,7 @@
           </li>
         </ul>
       </section>
-      <section id="contact" class="flexbox horz-center">
+      <footer id="contact" class="flexbox horz-center">
         <ul class="flexbox vert-center">
           <li>
             <a href="public/assets/pdfs/resume.pdf" target="_blank">
@@ -181,7 +184,7 @@
             </a>
           </li>
         </ul>
-      </section>
+      </footer>
     </main>
   </body>
 </html>
