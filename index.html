@@ -10,82 +10,111 @@
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
   </head>
   <body>
+    <div class="logo-links">
+      <a href="https://github.com/nantrinh" target="_blank">
+        <img
+          class="icon"
+          src="public/assets/icons/git_hub.svg"
+          alt="github logo"
+          id="github-logo"
+        />
+      </a>
+      <a href="public/assets/pdfs/resume.pdf" target="_blank">
+        <img
+          class="icon"
+          src="public/assets/icons/resume.svg"
+          alt="link to Nancy Trinh resume"
+          id="resume-logo"
+        />
+      </a>
+      <a href="https://www.linkedin.com/in/nancytrinh/" target="_blank">
+        <img
+          class="icon"
+          src="public/assets/icons/linked_in.svg"
+          alt="link to Nancy Trinh LinkedIn"
+          id="linkedin-logo"
+        />
+      </a>
+    </div>
     <header>
-      <nav>
-        <a id="resume-btn" href="public/assets/pdfs/resume.pdf" target="_blank"
-          >r&#233;sum&#233;</a
-        >
-        <div id="social">
-          <a id="github" href="https://github.com/nantrinh" target="_blank">
-            <img
-              class="icon"
-              src="public/assets/icons/git_hub.svg"
-              alt="link to Nancy Trinh GitHub"
-            />
-          </a>
-          <a
-            id="linkedin"
-            href="https://www.linkedin.com/in/nancytrinh/"
-            target="_blank"
-          >
-            <img
-              class="icon"
-              src="public/assets/icons/linked_in.svg"
-              alt="link to Nancy Trinh LinkedIn"
-            />
-          </a>
-        </div>
-      </nav>
-      <section id="intro" class="padded">
+      <section id="intro" class="flexbox horz-center padded">
         <section id="photo">
           <img
             id="avatar"
             src="public/assets/images/profile.png"
             alt="photo of Nancy Trinh"
           />
+          <h1 class="profile-name">Nancy Trinh</h1>
         </section>
         <section id="about">
-          <p>Hello! My name is <bold id="name">Nancy Trinh</bold>.</p>
           <p>
-            I have many years of experience in Python, particularly with the
-            data science stack (Numpy, Pandas, Scikit-Learn). I have also built
-            applications using Ruby and JavaScript.
+            I am a software engineer with experience in Python, Ruby,
+            JavaScript, SQL, and Docker. I have also worked extensively with the
+            Python data science stack (Numpy, Pandas, Scikit-Learn).
           </p>
           <p>
-            My most recent project is
+            I recently built
             <a
               href="https://venice-framework.github.io/docs.html"
               target="_blank"
               >Venice</a
-            >, a stream processing framework built in collaboration with a small
-            remote team.
+            >, a framework for deploying and managing stream processing
+            pipelines.
           </p>
         </section>
       </section>
     </header>
+
     <main>
-      <section id="projects" class="padded">
-        <h2>Projects</h2>
-        <ul>
-          <li>
+      <section id="venice" class="flexbox horz-center padded">
+        <div id="venice-title-container" class="flexbox">
+          <img
+            id="venice-logo"
+            src="https://raw.githubusercontent.com/nantrinh/nantrinh.github.io/f8055fffc0f774a0b844eb3ba9987e62190c2265/public/assets/images/venice_logo.png"
+            alt="Venice logo"
+          />
+          <h2>
+            <a href="https://github.com/venice-framework/venice"
+              >Venice Framework</a
+            >
+          </h2>
+        </div>
+        <div id="venice-info-container" class="flexbox">
+          <div>
             <img
+              id="hero-project-image"
               src="public/assets/images/venice_architecture.png"
               alt="Venice architecture"
             />
-            <h4>
-              <a
-                href="https://venice-framework.github.io/docs.html"
-                target="_blank"
-                >Stream processing pipeline framework</a
-              >
-            </h4>
+          </div>
+          <div class="flexbox horz-center">
             <p>
-              A framework that provides a default event stream processing
-              pipeline and a command-utility to automate tedious configuration
-              tasks. Built in collaboration with a remote team.
+              Venice provides a default event stream processing pipeline and a
+              command-utility to automate tedious configuration tasks, freeing
+              developers to focus on building applications.
             </p>
-          </li>
-
+            <p>
+              Example workflow: An event producer registers a schema with
+              Confluent Schema Registry and produces data to Apache Kafka
+              brokers, which write the data to topics and replicate across
+              partitions. Kafka Connect workers pull the data from topics and
+              populate a PostgreSQL server. A ksqlDB server and associated CLI
+              can be used to create streams over the data. The Kafdrop UI can be
+              used to view topics, partitions, consumers, and messages.
+            </p>
+            <a
+              id="venice-repo-btn"
+              class="btn"
+              target="_blank"
+              href="https://venice-framework.github.io/case-study.html"
+              >READ CASE STUDY</a
+            >
+          </div>
+        </div>
+      </section>
+      <section id="projects" class="padded">
+        <h2>Projects</h2>
+        <ul>
           <li>
             <img src="public/assets/images/postit.png" alt="Postit" />
             <h4>

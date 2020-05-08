@@ -179,88 +179,101 @@ a:hover {
 
 /* ---------------------------------
 
-              nav 
-
------------------------------------- */
-
-header nav {
-  display: flex;
-  justify-content: space-between;
-  height: 50px;
-  margin-top: 15px;
-  margin-left: 15px;
-  margin-right: 15px;
-}
-
-#resume-btn {
-  justify-self: start;
-  color: var(--dark-blue);
-  font-size: 1.5rem;
-  font-weight: 700;
-}
-
-#resume-btn:hover {
-  color: var(--orange);
-}
-
-#social {
-  display: flex;
-  justify-content: flex-end;
-}
-
-#social a {
-  justify-self: flex-end;
-  width: 50px;
-}
-
-#social .icon {
-  align-self: end;
-  width: 2%;
-}
-
-/* ---------------------------------
-
              intro 
 
 ------------------------------------ */
 
-#intro {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  background:         /* top, transparent black, faked with gradient */ linear-gradient(
+#avatar {
+  display: block;
+  max-width: 250px;
+  min-width: 200px;
+  object-fit: contain;
+  border-radius: 100%;
+}
+
+#intro p {
+  text-align: center;
+  max-width: 550px;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 36px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.profile-name {
+  font-size: 2rem;
+  margin: 2rem 0;
+  font-weight: 900;
+}
+
+/* ---------------------------------
+
+                venice
+
+------------------------------------ */
+
+#venice {
+  background: linear-gradient(
       rgba(255, 255, 255, 0.7),
       rgba(255, 255, 255, 0.7)
     ),
     url("https://source.unsplash.com/nN1HSDtKdlw");
   background-size: cover;
-  min-height: 200px;
 }
 
-#photo {
-  margin: 15px;
+#venice-title-container {
+  -ms-align-items: center;
+  align-items: center;
+  justify-content: center;
 }
 
-#avatar {
-  max-width: 200px;
-  min-width: 125px;
-  object-fit: contain;
-  width: 80%;
+#venice-logo {
+  display: inline-block;
+  margin-right: 15px;
+  width: 50px;
 }
 
-#about {
+#venice h2 {
+  display: inline-block;
+}
+
+#venice-info-container {
+  margin-top: 75px;
+}
+
+#venice-info-container > div {
   width: 50%;
 }
 
-#name {
-  color: var(--dark-blue);
-  font-family: "Roboto", sans-serif;
-  font-size: 1.5rem;
-  font-weight: 700;
-  display: inline;
-  margin-right: 6px;
+#venice-info-container > div:first-of-type {
+  margin-right: 2.5%;
 }
 
+#hero-project-image {
+  background-color: #282828;
+  border: solid 10px #282828;
+  border-radius: 10px;
+  max-width: 100%;
+}
+
+#venice-info-container > div:last-of-type {
+  margin-left: 2.5%;
+}
+
+#venice p:first-of-type {
+  position: relative;
+  top: -0.5rem;
+}
+
+#venice-repo-btn {
+  margin-top: 25px;
+  width: 228px;
+}
+
+#venice-repo-btn:hover {
+  background-color: var(--orange);
+  color: var(--white);
+}
 /* ---------------------------------
 
                 projects 
@@ -321,4 +334,155 @@ footer ul {
 
 footer li {
   margin: 6%;
+}
+
+/* ---------------------------------
+
+              contact
+
+------------------------------------ */
+
+#resume-logo {
+  cursor: pointer;
+  width: 35px;
+  position: fixed;
+  top: 5px;
+  left: 5px;
+}
+
+#github-logo {
+  cursor: pointer;
+  width: 35px;
+  position: fixed;
+  top: 55px;
+  left: 5px;
+}
+
+#linkedin-logo {
+  cursor: pointer;
+  width: 35px;
+  position: fixed;
+  top: 105px;
+  left: 5px;
+}
+
+#contact {
+  padding-top: 50px;
+  background: #f7f7f7;
+}
+
+#contact h3 {
+  margin-bottom: 10px;
+}
+
+#contact ul {
+  width: 20%;
+}
+
+#contact li {
+  margin: 6%;
+}
+
+/* ---------------------------------
+           media queries
+------------------------------------ */
+@media (max-width: 1100px) {
+  #venice-info-container {
+    -ms-align-items: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 50px;
+  }
+
+  #venice-info-container > div:first-of-type {
+    margin-right: 0;
+  }
+
+  #venice-info-container > div:last-of-type {
+    margin-left: 0;
+  }
+
+  #venice-info-container > div {
+    width: 90%;
+  }
+
+  #hero-project-image {
+    margin-bottom: 50px;
+  }
+
+  #contact ul {
+    width: 30%;
+  }
+
+  #contact li {
+    margin: 8%;
+  }
+}
+
+@media (max-width: 690px) {
+  #venice-logo {
+    margin-bottom: 25px;
+    width: 75px;
+  }
+
+  #venice-title-container {
+    -ms-align-items: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #venice-logo {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 570px) {
+  #venice-info-container {
+    margin-top: 25px;
+  }
+
+  #venice-repo-btn {
+    align-self: center;
+  }
+}
+
+@media (max-width: 465px) {
+  #venice-info-container > div {
+    width: 100%;
+  }
+
+  #venice-logo {
+    width: 60px;
+  }
+
+  #contact li {
+    margin: 15%;
+  }
+
+  #projects > ul {
+    width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  html {
+    font-size: 16px;
+  }
+
+  #venice-repo-btn {
+    width: 180px;
+  }
+
+  #projects > ul {
+    margin-top: 50px;
+  }
+
+  #projects li {
+    margin-bottom: 50px;
+  }
+
+  #projects li:last-of-type {
+    margin-bottom: 0;
+  }
 }
