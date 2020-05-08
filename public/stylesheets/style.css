@@ -192,12 +192,6 @@ a:hover {
 }
 
 #intro {
-  background: linear-gradient(
-      rgba(255, 255, 255, 0.7),
-      rgba(255, 255, 255, 0.7)
-    ),
-    url("https://source.unsplash.com/nN1HSDtKdlw");
-  background-size: cover;
 }
 
 #intro p {
@@ -222,7 +216,12 @@ a:hover {
 ------------------------------------ */
 
 #venice {
-  background-color: #ecf0f1;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url("https://source.unsplash.com/nN1HSDtKdlw");
+  background-size: cover;
 }
 
 #venice-title-container {
@@ -253,13 +252,11 @@ a:hover {
   margin-right: 2.5%;
 }
 
-#deploy-command-gif {
+#hero-project-image {
   background-color: #282828;
   border: solid 10px #282828;
   border-radius: 10px;
-  height: 75%;
   max-width: 100%;
-  width: 75%;
 }
 
 #venice-info-container > div:last-of-type {
@@ -382,4 +379,107 @@ footer li {
 
 #contact li {
   margin: 6%;
+}
+
+/* ---------------------------------
+           media queries
+------------------------------------ */
+@media (max-width: 920px) {
+  #venice-info-container {
+    -ms-align-items: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+  }
+
+  #venice-info-container > div:first-of-type {
+    margin-right: 0;
+  }
+
+  #venice-info-container > div:last-of-type {
+    margin-left: 0;
+  }
+
+  #venice-info-container > div {
+    width: 90%;
+  }
+
+  #hero-project-image {
+    margin-bottom: 50px;
+  }
+
+  #contact ul {
+    width: 30%;
+  }
+
+  #contact li {
+    margin: 8%;
+  }
+}
+
+@media (max-width: 690px) {
+  #venice-logo {
+    margin-bottom: 25px;
+    width: 75px;
+  }
+
+  #venice-title-container {
+    -ms-align-items: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #venice-logo {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 570px) {
+  #venice-info-container {
+    margin-top: 25px;
+  }
+
+  #venice-repo-btn {
+    align-self: center;
+  }
+}
+
+@media (max-width: 465px) {
+  #venice-info-container > div {
+    width: 100%;
+  }
+
+  #venice-logo {
+    width: 60px;
+  }
+
+  #contact li {
+    margin: 15%;
+  }
+
+  #projects > ul {
+    width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  html {
+    font-size: 16px;
+  }
+
+  #venice-repo-btn {
+    width: 180px;
+  }
+
+  #projects > ul {
+    margin-top: 50px;
+  }
+
+  #projects li {
+    margin-bottom: 50px;
+  }
+
+  #projects li:last-of-type {
+    margin-bottom: 0;
+  }
 }
