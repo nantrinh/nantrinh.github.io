@@ -183,16 +183,42 @@ a:hover {
 
 ------------------------------------ */
 
+#avatar {
+  display: block;
+  max-width: 250px;
+  min-width: 200px;
+  object-fit: contain;
+  border-radius: 100%;
+}
+
 #intro {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  background:         /* top, transparent black, faked with gradient */ linear-gradient(
+  background: linear-gradient(
       rgba(255, 255, 255, 0.7),
       rgba(255, 255, 255, 0.7)
     ),
     url("https://source.unsplash.com/nN1HSDtKdlw");
   background-size: cover;
+}
+
+#intro p {
+  text-align: center;
+  max-width: 550px;
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 36px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.profile-name {
+  font-size: 2rem;
+  margin: 2rem 0;
+  font-weight: 900;
+}
+/*
+#intro {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   min-height: 200px;
 }
 
@@ -218,8 +244,68 @@ a:hover {
   font-weight: 700;
   display: inline;
   margin-right: 6px;
+}*/
+
+/* ---------------------------------
+
+                venice
+
+------------------------------------ */
+
+#venice {
+  background-color: #ecf0f1;
 }
 
+#venice-title-container {
+  -ms-align-items: center;
+  align-items: center;
+  justify-content: center;
+}
+
+#venice-logo {
+  display: inline-block;
+  margin-right: 15px;
+  width: 50px;
+}
+
+#venice h2 {
+  display: inline-block;
+}
+
+#venice-info-container {
+  margin-top: 75px;
+}
+
+#venice-info-container > div {
+  width: 50%;
+}
+
+#venice-info-container > div:first-of-type {
+  margin-right: 2.5%;
+}
+
+#deploy-command-gif {
+  background-color: #282828;
+  border: solid 10px #282828;
+  border-radius: 10px;
+  height: 75%;
+  max-width: 100%;
+  width: 75%;
+}
+
+#venice-info-container > div:last-of-type {
+  margin-left: 2.5%;
+}
+
+#venice p:first-of-type {
+  position: relative;
+  top: -0.5rem;
+}
+
+#venice-repo-btn {
+  margin-top: 25px;
+  width: 228px;
+}
 /* ---------------------------------
 
                 projects 

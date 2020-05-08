@@ -10,34 +10,6 @@
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
   </head>
   <body>
-    <header>
-      <section id="intro" class="padded">
-        <section id="photo">
-          <img
-            id="avatar"
-            src="public/assets/images/profile.png"
-            alt="photo of Nancy Trinh"
-          />
-        </section>
-        <section id="about">
-          <p>Hello! My name is <bold id="name">Nancy Trinh</bold>.</p>
-          <p>
-            I have many years of experience in Python, particularly with the
-            data science stack (Numpy, Pandas, Scikit-Learn). I have also built
-            applications using Ruby and JavaScript.
-          </p>
-          <p>
-            My most recent project is
-            <a
-              href="https://venice-framework.github.io/docs.html"
-              target="_blank"
-              >Venice</a
-            >, a stream processing framework built in collaboration with a small
-            remote team.
-          </p>
-        </section>
-      </section>
-    </header>
     <div class="logo-links">
       <a href="https://github.com/nantrinh" target="_blank">
         <img
@@ -64,7 +36,77 @@
         />
       </a>
     </div>
+    <header>
+      <section id="intro" class="flexbox horz-center padded">
+        <section id="photo">
+          <img
+            id="avatar"
+            src="public/assets/images/profile.png"
+            alt="photo of Nancy Trinh"
+          />
+          <h1 class="profile-name">Nancy Trinh</h1>
+        </section>
+        <section id="about">
+          <p>
+            I am a software engineer with experience in Python, Ruby,
+            JavaScript, SQL, and Docker. I have also worked extensively with the
+            Python data science stack (Numpy, Pandas, Scikit-Learn).
+          </p>
+          <p>
+            I recently built
+            <a
+              href="https://venice-framework.github.io/docs.html"
+              target="_blank"
+              >Venice</a
+            >, a framework for deploying and managing stream processing
+            pipelines.
+          </p>
+        </section>
+      </section>
+    </header>
+
     <main>
+      <section id="venice" class="flexbox horz-center padded">
+        <div id="venice-title-container" class="flexbox">
+          <img
+            id="venice-logo"
+            src="public/assets/images/venice_logo.png"
+            alt="Venice logo"
+          />
+          <h2>
+            <a href="https://github.com/venice-framework/venice"
+              >Venice Framework</a
+            >
+          </h2>
+        </div>
+        <div id="venice-info-container" class="flexbox">
+          <div>
+            <img
+              id="deploy-command-gif"
+              src="https://raw.githubusercontent.com/venice-framework/venice-framework.github.io/master/images/diagrams/gifs/workflow.gif"
+              alt="A gif showing sample Venice commands"
+            />
+          </div>
+          <div class="flexbox horz-center">
+            <p>
+              I recently co-created Venice, an open-source framework for
+              deploying and managing stream processing pipelines.
+            </p>
+            <p>
+              Venice's default pipeline consists of Apache Kafka brokers,
+              Zookeeper, Zookeeper, Confluent Schema Registry, Kafka Connect,
+              ksqlDB, PostgreSQL server, and Kafdrop.
+            </p>
+            <a
+              id="venice-repo-btn"
+              class="btn"
+              target="_blank"
+              href="https://venice-framework.github.io/case-study.html"
+              >READ THE CASE STUDY</a
+            >
+          </div>
+        </div>
+      </section>
       <section id="projects" class="padded">
         <h2>Projects</h2>
         <ul>
