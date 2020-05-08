@@ -191,9 +191,6 @@ a:hover {
   border-radius: 100%;
 }
 
-#intro {
-}
-
 #intro p {
   text-align: center;
   max-width: 550px;
@@ -271,6 +268,11 @@ a:hover {
 #venice-repo-btn {
   margin-top: 25px;
   width: 228px;
+}
+
+#venice-repo-btn:hover {
+  background-color: var(--orange);
+  color: var(--white);
 }
 /* ---------------------------------
 
@@ -384,10 +386,11 @@ footer li {
 /* ---------------------------------
            media queries
 ------------------------------------ */
-@media (max-width: 920px) {
+@media (max-width: 1100px) {
   #venice-info-container {
     -ms-align-items: center;
     align-items: center;
+    text-align: center;
     flex-direction: column;
     margin-top: 50px;
   }
