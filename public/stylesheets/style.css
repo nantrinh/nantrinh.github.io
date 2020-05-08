@@ -179,47 +179,6 @@ a:hover {
 
 /* ---------------------------------
 
-              nav 
-
------------------------------------- */
-
-header nav {
-  display: flex;
-  justify-content: space-between;
-  height: 50px;
-  margin-top: 15px;
-  margin-left: 15px;
-  margin-right: 15px;
-}
-
-#resume-btn {
-  justify-self: start;
-  color: var(--dark-blue);
-  font-size: 1.5rem;
-  font-weight: 700;
-}
-
-#resume-btn:hover {
-  color: var(--orange);
-}
-
-#social {
-  display: flex;
-  justify-content: flex-end;
-}
-
-#social a {
-  justify-self: flex-end;
-  width: 50px;
-}
-
-#social .icon {
-  align-self: end;
-  width: 2%;
-}
-
-/* ---------------------------------
-
              intro 
 
 ------------------------------------ */
@@ -320,5 +279,52 @@ footer ul {
 }
 
 footer li {
+  margin: 6%;
+}
+
+/* ---------------------------------
+
+              contact
+
+------------------------------------ */
+
+#resume-logo {
+  cursor: pointer;
+  width: 35px;
+  position: fixed;
+  top: 5px;
+  left: 5px;
+}
+
+#github-logo {
+  cursor: pointer;
+  width: 35px;
+  position: fixed;
+  top: 55px;
+  left: 5px;
+}
+
+#linkedin-logo {
+  cursor: pointer;
+  width: 35px;
+  position: fixed;
+  top: 105px;
+  left: 5px;
+}
+
+#contact {
+  padding-top: 50px;
+  background: #f7f7f7;
+}
+
+#contact h3 {
+  margin-bottom: 10px;
+}
+
+#contact ul {
+  width: 20%;
+}
+
+#contact li {
   margin: 6%;
 }
