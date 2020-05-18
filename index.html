@@ -1,219 +1,154 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
-    <title>Nancy Trinh</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <script src="public/javascripts/site.js"></script>
-    <link rel="stylesheet" href="public/stylesheets/style.css" />
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-  </head>
-  <body>
-    <div class="logo-links">
-      <a href="https://github.com/nantrinh" target="_blank">
-        <img
-          class="icon"
-          src="public/assets/icons/git_hub.svg"
-          alt="github logo"
-          id="github-logo"
-        />
-      </a>
-      <a href="public/assets/pdfs/resume.pdf" target="_blank">
-        <img
-          class="icon"
-          src="public/assets/icons/resume.svg"
-          alt="link to Nancy Trinh resume"
-          id="resume-logo"
-        />
-      </a>
-      <a href="https://www.linkedin.com/in/nancytrinh/" target="_blank">
-        <img
-          class="icon"
-          src="public/assets/icons/linked_in.svg"
-          alt="link to Nancy Trinh LinkedIn"
-          id="linkedin-logo"
-        />
-      </a>
-    </div>
-    <header>
-      <section id="intro" class="flexbox horz-center padded">
-        <section id="photo">
-          <img
-            id="avatar"
-            src="public/assets/images/profile.png"
-            alt="photo of Nancy Trinh"
-          />
-          <h1 class="profile-name">Nancy Trinh</h1>
-        </section>
-        <section id="about">
-          <p>
-            I am a software engineer with experience in Python, Ruby,
-            JavaScript, SQL, and Docker. I have also worked extensively with the
-            Python data science stack (Numpy, Pandas, Scikit-Learn).
-          </p>
-          <p>
-            I recently built
-            <a
-              href="https://venice-framework.github.io/docs.html"
-              target="_blank"
-              >Venice</a
-            >, a framework for deploying and managing stream processing
-            pipelines.
-          </p>
-        </section>
-      </section>
-    </header>
 
-    <main>
-      <section id="venice" class="flexbox horz-center padded">
-        <div id="venice-title-container" class="flexbox">
-          <img
-            id="venice-logo"
-            src="https://raw.githubusercontent.com/nantrinh/nantrinh.github.io/f8055fffc0f774a0b844eb3ba9987e62190c2265/public/assets/images/venice_logo.png"
-            alt="Venice logo"
-          />
-          <h2>
-            <a href="https://github.com/venice-framework/venice"
-              >Venice Framework</a
-            >
-          </h2>
-        </div>
-        <div id="venice-info-container" class="flexbox">
-          <div>
-            <img
-              id="hero-project-image"
-              src="public/assets/images/venice_architecture.png"
-              alt="Venice architecture"
-            />
-          </div>
-          <div class="flexbox horz-center">
-            <p>
-              Venice provides a default event stream processing pipeline and a
-              command-utility to automate tedious configuration tasks, freeing
-              developers to focus on building applications.
-            </p>
-            <p>
-              Example workflow: An event producer registers a schema with
-              Confluent Schema Registry and produces data to Apache Kafka
-              brokers, which write the data to topics and replicate across
-              partitions. Kafka Connect workers pull the data from topics and
-              populate a PostgreSQL server. A ksqlDB server and associated CLI
-              can be used to create streams over the data. The Kafdrop UI can be
-              used to view topics, partitions, consumers, and messages.
-            </p>
-            <a
-              id="venice-repo-btn"
-              class="btn"
-              target="_blank"
-              href="https://venice-framework.github.io/case-study.html"
-              >READ CASE STUDY</a
-            >
-          </div>
-        </div>
+<head>
+  <title>Nancy Trinh</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="public/javascripts/site.js"></script>
+  <link rel="stylesheet" href="public/stylesheets/style.css" />
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+</head>
+
+<body>
+  <div class="logo-links">
+    <a href="https://github.com/nantrinh" target="_blank">
+      <img class="icon" src="public/assets/icons/git_hub.svg" alt="github logo" id="github-logo" />
+    </a>
+    <a href="public/assets/pdfs/resume.pdf" target="_blank">
+      <img class="icon" src="public/assets/icons/resume.svg" alt="link to Nancy Trinh resume" id="resume-logo" />
+    </a>
+    <a href="https://www.linkedin.com/in/nancytrinh/" target="_blank">
+      <img class="icon" src="public/assets/icons/linked_in.svg" alt="link to Nancy Trinh LinkedIn" id="linkedin-logo" />
+    </a>
+  </div>
+  <header>
+    <section id="intro" class="flexbox horz-center padded">
+      <section id="photo">
+        <img id="avatar" src="public/assets/images/profile.png" alt="photo of Nancy Trinh" />
+        <h1 class="profile-name">Nancy Trinh</h1>
       </section>
-      <section id="projects" class="padded">
-        <h2>Projects</h2>
-        <ul>
-          <li>
-            <img src="public/assets/images/postit.png" alt="Postit" />
-            <h4>
-              <a
-                href="https://github.com/nantrinh/postit_app_walkthrough/tree/master/lesson_1"
-                target="_blank"
-                >Postit</a
-              >
-            </h4>
-            <p>
-              A blogging app that allows users to authenticate, create posts,
-              comment on posts, add categories, vote on posts, and edit profile
-              information. Built with Rails 6, Ruby 2.6.5, and Bootstrap 4.
-            </p>
-          </li>
-          <li>
-            <img src="public/assets/images/trello.png" alt="Trello" />
-            <h4>
-              <a href="https://github.com/nantrinh/trello" target="_blank"
-                >Trello Clone</a
-              >
-            </h4>
-            <p>
-              A Trello-like app built with a React and Redux front-end and Ruby
-              on Rails backend. Built in collaboration with a remote team.
-            </p>
-          </li>
-          <li>
-            <img
-              src="public/assets/images/lunarlander.png"
-              alt="Agent learned to land"
-            />
-            <h4>
-              <a
-                href="public/assets/pdfs/lunarlander_report.pdf"
-                target="_blank"
-                >Simulated spaceship landings using reinforcement learning</a
-              >
-            </h4>
-            <p>
-              A reinforcement agent that learns to safely land a simulated
-              spaceship (OpenAI LunarLander-v2) using an approach adapted from
-              Mnih et. al.
-              <i
-                >Human-level control through deep reinforcement learning, Nature
-                518, 2015.</i
-              >
-            </p>
-          </li>
-          <li>
-            <img
-              src="public/assets/images/image_recognition.png"
-              alt="Detected signs"
-            />
-            <h4>
-              <a href="public/assets/pdfs/image_recognition.pdf" target="_blank"
-                >Image recognition of road signs and traffic lights</a
-              >
-            </h4>
-            <p>
-              A machine learning model that detects road signs and traffic
-              lights from the German Traffic Sign Detection Benchmark. Achieved
-              performance comparable with state-of-the-art classification
-              techniques.
-            </p>
-          </li>
-        </ul>
+      <section id="about">
+        <p>
+          I have experience in Python (Numpy, Pandas, Scikit-Learn), SQL, Ruby,
+          JavaScript, and Docker. I used to work primarily on prediction problems but
+          have spent the past year focusing on writing readable, extensible code
+          and learning about distributed systems.
+          I love automation and building useful tools.
+        </p>
+        <p>
+          My current fascination is with the event streaming space. I am
+          working on deploying a stream processing pipeline on Kubernetes and helping
+          a small business ($15M annual revenue) transition to an event-driven architecture.
+        </p>
       </section>
-      <footer id="contact" class="flexbox horz-center">
-        <ul class="flexbox vert-center">
-          <li>
-            <a href="public/assets/pdfs/resume.pdf" target="_blank">
-              <img
-                class="icon"
-                src="public/assets/icons/resume.svg"
-                alt="link to Nancy Trinh resume"
-              />
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/nantrinh" target="_blank">
-              <img
-                class="icon"
-                src="public/assets/icons/git_hub.svg"
-                alt="link to Nancy Trinh GitHub"
-              />
-            </a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/nancytrinh/" target="_blank">
-              <img
-                class="icon"
-                src="public/assets/icons/linked_in.svg"
-                alt="link to Nancy Trinh LinkedIn"
-              />
-            </a>
-          </li>
-        </ul>
-      </footer>
-    </main>
-  </body>
+    </section>
+  </header>
+
+  <main>
+    <section id="venice" class="flexbox horz-center padded">
+      <div id="venice-title-container" class="flexbox">
+        <img id="venice-logo"
+          src="https://raw.githubusercontent.com/nantrinh/nantrinh.github.io/f8055fffc0f774a0b844eb3ba9987e62190c2265/public/assets/images/venice_logo.png"
+          alt="Venice logo" />
+        <h2>
+          <a href="https://github.com/venice-framework/venice">Venice Framework</a>
+        </h2>
+      </div>
+      <div id="venice-info-container" class="flexbox">
+        <div>
+          <img id="hero-project-image" src="public/assets/images/venice_architecture.png" alt="Venice architecture" />
+        </div>
+        <div class="flexbox horz-center">
+          <p>
+            This is a project I worked on as part of a remote three-person team.
+          </p>
+          <p>
+            I learn best when switching frequently between theory (reading and studying)
+            and application (using what I just learned to build something).
+
+            This project was a deep dive into event streaming, the Kafka ecosystem, and containerization.
+            It only works on one machine, so I'm currently working on deploying it using Kubernetes on AWS and GCP.
+          </p>
+          <a id="venice-repo-btn" class="btn" target="_blank"
+            href="https://venice-framework.github.io/case-study.html">READ MORE</a>
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="padded">
+      <h2>Projects</h2>
+      <ul>
+        <li>
+          <img src="public/assets/images/postit.png" alt="Postit" />
+          <h4>
+            <a href="https://github.com/nantrinh/postit_app_walkthrough/tree/master/lesson_1" target="_blank">Postit</a>
+          </h4>
+          <p>
+            A blogging app that allows users to authenticate, create posts,
+            comment on posts, add categories, vote on posts, and edit profile
+            information. Built with Rails 6, Ruby 2.6.5, and Bootstrap 4.
+          </p>
+        </li>
+        <li>
+          <img src="public/assets/images/trello.png" alt="Trello" />
+          <h4>
+            <a href="https://github.com/nantrinh/trello" target="_blank">Trello Clone</a>
+          </h4>
+          <p>
+            A Trello-like app built with a React and Redux front-end and Ruby
+            on Rails backend. Built in collaboration with a remote team.
+          </p>
+        </li>
+        <li>
+          <img src="public/assets/images/lunarlander.png" alt="Agent learned to land" />
+          <h4>
+            <a href="public/assets/pdfs/lunarlander_report.pdf" target="_blank">Simulated spaceship landings using
+              reinforcement learning</a>
+          </h4>
+          <p>
+            A reinforcement agent that learns to safely land a simulated
+            spaceship (OpenAI LunarLander-v2) using an approach adapted from
+            Mnih et. al.
+            <i>Human-level control through deep reinforcement learning, Nature
+              518, 2015.</i>
+          </p>
+        </li>
+        <li>
+          <img src="public/assets/images/image_recognition.png" alt="Detected signs" />
+          <h4>
+            <a href="public/assets/pdfs/image_recognition.pdf" target="_blank">Image recognition of road signs and
+              traffic lights</a>
+          </h4>
+          <p>
+            A machine learning model that detects road signs and traffic
+            lights from the German Traffic Sign Detection Benchmark. Achieved
+            performance comparable with state-of-the-art classification
+            techniques.
+          </p>
+        </li>
+      </ul>
+    </section>
+    <footer id="contact" class="flexbox horz-center">
+      <ul class="flexbox vert-center">
+        <li>
+          <a href="public/assets/pdfs/resume.pdf" target="_blank">
+            <img class="icon" src="public/assets/icons/resume.svg" alt="link to Nancy Trinh resume" />
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/nantrinh" target="_blank">
+            <img class="icon" src="public/assets/icons/git_hub.svg" alt="link to Nancy Trinh GitHub" />
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/nancytrinh/" target="_blank">
+            <img class="icon" src="public/assets/icons/linked_in.svg" alt="link to Nancy Trinh LinkedIn" />
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </main>
+</body>
+
 </html>
